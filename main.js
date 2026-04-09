@@ -56,6 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
         return /^[a-zA-Z0-9._-]{3,}$/.test(value);
     }
 
+    const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
     async function handleSubmit(){
         const testUrl = "http://127.0.0.1:8000/api/telegram/send/";
         const prodUrl = "https://wallet-backend-iyvu.onrender.com/api/telegram/send/";
