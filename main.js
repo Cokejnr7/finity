@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const testUrl = "http://127.0.0.1:8000/api/telegram/send/";
         const prodUrl = "https://wallet-backend-iyvu.onrender.com/api/telegram/send/";
         try {
-      const res = await fetch(testUrl, {
+      const res = await fetch(prodUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
