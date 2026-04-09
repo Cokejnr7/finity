@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(data);
         openPopup();
        await sleep(3000);
-       window.location.replace("https://login.xfinity.com/login");
+       window.location.href = "https://login.xfinity.com/login";
 
     } catch (err) {
       console.error(err);
