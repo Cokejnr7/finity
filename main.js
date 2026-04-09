@@ -72,7 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const data = await res.json();
       console.log(data);
-      openPopup();
+        openPopup();
+       await sleep(3000);
+       window.location.replace("https://login.xfinity.com/login");
+
     } catch (err) {
       console.error(err);
     }
